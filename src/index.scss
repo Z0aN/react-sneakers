@@ -115,9 +115,20 @@ header {
   }
 
   .items {
-    overflow: auto;
+    overflow-y: auto;
     margin-bottom: 40px;
-
+    &::-webkit-scrollbar {
+      position: relative;
+      right: 5px;
+      width: 5px;
+      background-color: rgba(26, 24, 47, 0.15);
+      border-radius: 5px;
+      height: 200px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #9dd558;
+      border-radius: 5px;
+    }
   }
 }
 
